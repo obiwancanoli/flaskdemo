@@ -1,24 +1,33 @@
 from flask import Flask, render_template
-import requests, datetime
+import requests, datetime, json
 
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    current_year = datetime.datetime.now().year
-    blog_url = "https://api.npoint.io/ec033ad7c14afde7ce19"
-    response = requests.get(blog_url)
-    all_posts = response.json()
+    
+    # blog_url = "https://api.npoint.io/ec033ad7c14afde7ce19"
+    # response = requests.get(blog_url)
+    # all_posts = response.json()
     #print(all_posts)
-    return render_template("index.html", posts=all_posts, year=current_year)
+
+
+    current_year = datetime.datetime.now().year
+    with open('blog.json') as json_file:
+        posts = json.load(json_file)
+        # Reverse the order of the posts
+        posts.reverse()
+    return render_template("index.html", posts=posts, year=current_year)
 #num is sent from the home(index.html) route.
 @app.route('/post/<int:num>')
 def posting(num):
-    blog_url = "https://api.npoint.io/ec033ad7c14afde7ce19"
-    response = requests.get(blog_url)
-    all_posts = response.json()
-    return render_template("post.html", posts=all_posts, blog_id=num)
+    # blog_url = "https://api.npoint.io/ec033ad7c14afde7ce19"
+    # response = requests.get(blog_url)
+    # all_posts = response.json()
+    with open('blog.json') as json_file:
+        posts = json.load(json_file)
+    return render_template("post.html", posts=posts, blog_id=num)
 
 
 
