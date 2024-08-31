@@ -18,7 +18,7 @@ def home():
         posts = json.load(json_file)
         # Reverse the order of the posts
         posts.reverse()
-    return render_template("index.html", posts=posts, year=current_year)
+    return render_template("index.html", posts=posts, current_year=current_year)
 #num is sent from the home(index.html) route.
 @app.route('/post/<int:num>')
 def posting(num):
