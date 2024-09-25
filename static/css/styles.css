@@ -1,6 +1,6 @@
 
 .gradient-background {
-  background: linear-gradient(300deg, #61876E, #3C6255, #A6BB8D);
+  background: linear-gradient(300deg, #617387, #3c4462, #8d9cbb);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
@@ -43,3 +43,4 @@
 .title {
   font-family: cursive;
 }
+
