@@ -1,8 +1,14 @@
 [
     {"id":1,
-        "body":"The happiest day of my life!! The day I went home with my mommy and daddy. They picked me up from my momma and my siblings at Sunkissed Doodles in Garden Grove, California. A perfect home for me to grow healthy and full of love before my furrever home. I got to ride on daddy's lap the whole way home. I was a little nervous being in a car for the first time but daddy kept petting me and telling me it was all ok. He was right! We ended up at my home in Long Beach, California. Now it's time to live the beach lofe I was born to live. Until next time! Cooper out...",
+        "body":"The happiest day of my life!! The day I went home with my mommy and daddy. They picked me up from my momma and my siblings at Sunkissed Doodles in Garden Grove, California. A perfect home for me to grow healthy and full of love before my furrever home. I got to ride on daddy's lap the whole way home. I was a little nervous being in a car for the first time but daddy kept petting me and telling me it was all ok. He was right! We ended up at my home in Long Beach, California. Now it's time to live the beach life I was born to live. Until next time! Cooper out...",
         "title":"My First Day Home",
         "date":"March 28, 2024",
         "location":"Long Beach, CA",
-        "image":"/static/march26.png"}
+        "image":"/static/march26.png"},
+        {"id":2,
+        "body":"After weeks of being COOPED up, I am finally able to go out into the world! My daddy took me around the block a couple of times in a little baby sling so I can meet all the animals and hear all the noises. I love it! Here's a picture of me getting ready to go for my first walk! Until next time! Cooper out...",
+        "title":"Free To Wander",
+        "date":"May 16, 2024",
+        "location":"Long Beach, CA",
+        "image":"/static/may16.png"}
 ]

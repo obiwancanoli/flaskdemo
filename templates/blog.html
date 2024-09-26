@@ -17,6 +17,11 @@
       <a class="navbar-brand" href="/">
         <img src="/static/dogprint.png" alt="dog paw" width="30" height="24">
       </a>
+
+                <!-- Toggler button for small screens (hamburger icon) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
     
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
@@ -33,17 +38,28 @@
 
 <section id="blog">
 
+  <div class="px-4 py-5 my-5 text-center gradient-background">
+    <img class="d-block mx-auto mb-4" src="/static/dogprint.png" alt="dogprint" width="72" height="57">
+    <h1 class="display-5 fw-bold text-body-emphasis">Doggy Blog!</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">This is my blog where you can follow along on all of my adventures as a dood. I post a picture with all of my posts so make sure to come back for my latest outing.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="/" class="btn btn-outline-primary btn-lg px-4 me-md-2" role="button">Home</a>
+        <a href="about.html" class="btn btn-outline-warning btn-lg px-4 me-md-2" role="button">About</a>
+      </div>
+    </div>
+  </div>
+
   <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Blog</h2>
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     {% for blog_post in posts %}
       <div class="col">
         <a href="{{ url_for('posting', num=blog_post['id']-1) }}" class="card-link">
-          <div class='card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg' 
-               style="background-image: url('{{ blog_post["image"] }}'); background-size: cover;">
+          <div class='card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center' 
+               style="background-image: url('{{ blog_post["image"] }}'); background-size: cover; background-position: center;">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{ blog_post["title"] }}</h3>
-              <ul class="d-flex list-unstyled mt-auto">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-center">{{ blog_post["title"] }}</h3>
+              <ul class="d-flex list-unstyled mt-auto justify-content-center">
                 <li class="d-flex align-items-center me-3">
                   <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
                   <small>{{ blog_post["location"] }}</small>

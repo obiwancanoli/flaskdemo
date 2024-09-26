@@ -16,6 +16,10 @@
           <a class="navbar-brand" href="/">
             <img src="/static/dogprint.png" alt="dog paw" width="30" height="24">
           </a>
+          <!-- Toggler button for small screens (hamburger icon) -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
@@ -30,10 +34,10 @@
 <body>
     <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-12 col-sm-8 col-lg-6 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
                 <img src={{ posts[blog_id]["image"] }} class="d-block mx-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
-            <div class="col-lg-6">
+            <div class="col-12 col-lg-6 text-center">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">{{ posts[blog_id]["title"] }}</h1>
                 <p class="lead">{{ posts[blog_id]["body"] }}</p>
             </div>
