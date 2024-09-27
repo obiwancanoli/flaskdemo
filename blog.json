@@ -10,5 +10,11 @@
         "title":"Free To Wander",
         "date":"May 16, 2024",
         "location":"Long Beach, CA",
-        "image":"/static/may16.png"}
+        "image":"/static/may16.png"},
+        {"id":3,
+        "body":"Don't I look dapper? I got my first haircut today and boy was it an advendure. First, this really nice lady put me in her van and gave me all the pets. I was a nervous Nelly at the beginning but she made me feel cozy and then began to cut all my fur off! I was looking like a raggamuffin so it was about time. Now I am a distinguished looking gentleman. Until next time! Cooper out...",
+        "title":"My First Haircut",
+        "date":"June 10, 2024",
+        "location":"Long Beach, CA",
+        "image":"/static/june10.png"}
 ]
